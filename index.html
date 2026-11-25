@@ -364,7 +364,7 @@ html.lang-en .es{display:none!important}
  .bigcta .btn{font-size:1.05rem;padding:1rem 1.4rem}
  .langsw{top:10px;right:10px}
 }
-</style><style>html,body{overflow-x:hidden;max-width:100%}@media (max-width:820px){.about .wrap{grid-template-columns:1fr;gap:28px}.about .photo{width:70%;max-width:240px;margin:18px auto 6px}.creds{grid-template-columns:1fr 1fr}.cf{height:auto;min-height:170px}.cf-in{height:auto;min-height:170px}.cf .cred{position:relative;inset:auto;min-height:170px;height:100%}.cf .cred b{font-size:.95rem;overflow-wrap:anywhere}.cf .cred .tap{margin-top:4px}}@media (max-width:560px){.creds{grid-template-columns:1fr}.cf,.cf-in,.cf .cred{min-height:0}.cf .cred{flex-direction:row;flex-wrap:wrap;align-items:center;padding:16px}.cf .cred>div:nth-child(2){flex:1;min-width:0}.cf .cred .tap{flex-basis:100%;justify-content:center;width:max-content}}</style></head><body><script>(function(){function L(){try{return localStorage.getItem('isi-lang')}catch(e){return null}}
+</style><style>html,body{overflow-x:hidden;max-width:100%}@media (max-width:820px){.about .wrap{grid-template-columns:1fr;gap:28px}.about .photo{width:70%;max-width:240px;margin:18px auto 6px}.creds{grid-template-columns:1fr 1fr}.cf{height:auto;min-height:170px}.cf-in{height:auto;min-height:170px}.cf .cred{position:relative;inset:auto;min-height:170px;height:100%}.cf .cred b{font-size:.95rem;overflow-wrap:anywhere}.cf .cred .tap{margin-top:4px}}@media (max-width:560px){.creds{grid-template-columns:1fr}.cf,.cf-in,.cf .cred{min-height:0}.cf .cred{flex-direction:row;flex-wrap:wrap;align-items:center;padding:16px}.cf .cred>div:nth-child(2){flex:1;min-width:0}.cf .cred .tap{flex-basis:100%;justify-content:center;width:max-content}}body.modal-open{overflow:hidden}#isi-bd{position:fixed;inset:0;background:rgba(10,9,8,.72);-webkit-backdrop-filter:blur(3px);backdrop-filter:blur(3px);z-index:998;display:none}#isi-bd.on{display:block}.leadbox.open{position:fixed!important;top:50%!important;left:50%!important;right:auto!important;bottom:auto!important;transform:translate(-50%,-50%);width:min(92vw,540px);max-width:none;max-height:88vh;overflow:auto;margin:0!important;z-index:999;animation:none!important}.lb{position:fixed!important;inset:0!important;z-index:1000!important;padding:64px 16px 24px!important}.lb img{max-height:70vh!important;max-width:100%!important}.lb .x{position:fixed!important;top:14px!important;right:14px!important;z-index:1001}.curtog{display:inline-flex;gap:4px;background:rgba(10,9,8,.07);border-radius:999px;padding:4px;margin:16px 0 4px}.curtog button{border:0;background:none;font:inherit;font-weight:800;font-size:.9rem;padding:.45rem 1.05rem;border-radius:999px;cursor:pointer;color:inherit}.curtog button.on{background:#0A0908;color:#fff}</style></head><body><script>(function(){function L(){try{return localStorage.getItem('isi-lang')}catch(e){return null}}
 window.isiSetLang=function(l){var h=document.documentElement;h.classList.toggle('lang-en',l==='en');h.lang=l;try{localStorage.setItem('isi-lang',l)}catch(e){}
 document.querySelectorAll('.langsw button').forEach(function(b){b.classList.toggle('on',b.dataset.l===l)});
 document.querySelectorAll('[data-ph-es]').forEach(function(i){i.placeholder=l==='en'?i.dataset.phEn:i.dataset.phEs});};
@@ -459,4 +459,56 @@ if(window.google&&google.script&&google.script.run){google.script.run.withSucces
    <a class="btn btn-wa" href="https://chat.whatsapp.com/DE4PgxtG23TBY7kqtRiiHs" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2Zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.2-.4.2-.4.7-1.3.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.7 11.8 11.8 0 0 0 4.5 4c1.7.7 2.3.8 3.2.6.5-.1 1.5-.6 1.7-1.2.2-.6.2-1.1.2-1.2-.1-.1-.2-.2-.5-.3Z"/></svg> <span class="es">Únete a la comunidad</span><span class="en">Join the community</span></a>
  </div>
  <div class="foot"><div class="brand"><img src="https://lh3.googleusercontent.com/d/1Ip2hsl5CRmp97xQwi6WNOmMYCK7G4SDs" alt="">I Speak It</div><div><a href="mailto:Sousukehirujo@gmail.com" style="text-decoration:underline">Sousukehirujo@gmail.com</a> · © 2026 César Hirujo · I Speak It</div></div>
-</div></section></body></html>
+</div></section><script>(function isiExtraClient_() {
+  var R = 60;
+  var lead = document.getElementById('lead'), lb = document.getElementById('lb');
+  var bd = document.createElement('div'); bd.id = 'isi-bd'; document.body.appendChild(bd);
+  if (lead) document.body.appendChild(lead);
+  if (lb) document.body.appendChild(lb);
+  function sync() {
+    document.body.classList.toggle('modal-open', !!document.querySelector('#lead.open,#lb.open'));
+    bd.classList.toggle('on', !!document.querySelector('#lead.open'));
+  }
+  var mo = new MutationObserver(sync);
+  [lead, lb].forEach(function (el) { if (el) mo.observe(el, { attributes: true, attributeFilter: ['class'] }); });
+  try {
+    var real = window.google && google.script && google.script.run;
+    if (real) {
+      var mk = function (ok, fail) {
+        return new Proxy({}, { get: function (_, k) {
+          if (k === 'withSuccessHandler') return function (f) { return mk(f, fail); };
+          if (k === 'withFailureHandler') return function (f) { return mk(ok, f); };
+          return function (d) {
+            var x = real; if (ok) x = x.withSuccessHandler(ok); if (fail) x = x.withFailureHandler(fail);
+            return x[k](Object.assign({}, d || {}, { lang: document.documentElement.lang === 'en' ? 'en' : 'es' }));
+          };
+        } });
+      };
+      google.script.run = mk();
+    }
+  } catch (e) {}
+  var pl = document.querySelector('.plans');
+  if (pl) {
+    var t = document.createElement('div'); t.className = 'curtog';
+    ['rd', 'us'].forEach(function (c) { var b = document.createElement('button'); b.type = 'button'; b.dataset.c = c; b.textContent = c === 'rd' ? 'RD$' : 'US$'; t.appendChild(b); });
+    pl.parentNode.insertBefore(t, pl);
+    var els = [].slice.call(document.querySelectorAll('.plan .price,.plan .save,.fine'));
+    els.forEach(function (e) { e.dataset.rd = e.innerHTML; });
+    var setCur = function (c) {
+      els.forEach(function (e) {
+        var h = e.dataset.rd;
+        if (c === 'us') {
+          h = h.replace(/RD\$([\d,]+)/g, function (m, n) { return 'US$' + Math.round(parseInt(n.replace(/,/g, ''), 10) / R).toLocaleString('en-US'); })
+               .replace('Precios en pesos dominicanos', 'Precios en dólares (referencia: US$1 = RD$60)')
+               .replace('Prices in Dominican pesos', 'Prices in US dollars (reference: US$1 = RD$60)');
+        }
+        e.innerHTML = h;
+      });
+      [].forEach.call(t.querySelectorAll('button'), function (b) { b.classList.toggle('on', b.dataset.c === c); });
+      try { localStorage.setItem('isi-cur', c); } catch (e) {}
+    };
+    t.addEventListener('click', function (e) { var b = e.target.closest('button'); if (b) setCur(b.dataset.c); });
+    var c0 = 'rd'; try { c0 = localStorage.getItem('isi-cur') || 'rd'; } catch (e) {}
+    setCur(c0);
+  }
+})();</script></body></html>
