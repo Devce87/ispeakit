@@ -364,7 +364,7 @@ html.lang-en .es{display:none!important}
  .bigcta .btn{font-size:1.05rem;padding:1rem 1.4rem}
  .langsw{top:10px;right:10px}
 }
-</style><style>html,body{overflow-x:hidden;max-width:100%}</style></head><body><script>(function(){function L(){try{return localStorage.getItem('isi-lang')}catch(e){return null}}
+</style><style>html,body{overflow-x:hidden;max-width:100%}@media (max-width:820px){.about .wrap{grid-template-columns:1fr;gap:28px}.about .photo{width:70%;max-width:240px;margin:18px auto 6px}.creds{grid-template-columns:1fr 1fr}.cf{height:auto;min-height:170px}.cf-in{height:auto;min-height:170px}.cf .cred{position:relative;inset:auto;min-height:170px;height:100%}.cf .cred b{font-size:.95rem;overflow-wrap:anywhere}.cf .cred .tap{margin-top:4px}}@media (max-width:560px){.creds{grid-template-columns:1fr}.cf,.cf-in,.cf .cred{min-height:0}.cf .cred{flex-direction:row;flex-wrap:wrap;align-items:center;padding:16px}.cf .cred>div:nth-child(2){flex:1;min-width:0}.cf .cred .tap{flex-basis:100%;justify-content:center;width:max-content}}</style></head><body><script>(function(){function L(){try{return localStorage.getItem('isi-lang')}catch(e){return null}}
 window.isiSetLang=function(l){var h=document.documentElement;h.classList.toggle('lang-en',l==='en');h.lang=l;try{localStorage.setItem('isi-lang',l)}catch(e){}
 document.querySelectorAll('.langsw button').forEach(function(b){b.classList.toggle('on',b.dataset.l===l)});
 document.querySelectorAll('[data-ph-es]').forEach(function(i){i.placeholder=l==='en'?i.dataset.phEn:i.dataset.phEs});};
